@@ -1,0 +1,315 @@
+body{
+    background-color: #F5F5F5;
+}
+
+li{
+    list-style: none;
+}
+/* start nav */
+.navbar-brand{
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+
+}
+
+.nav-link{
+    font-weight: 600;
+}
+
+.link{
+    position: relative;
+}
+
+.link::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all .5s;
+}
+
+.active::after{
+    width: 100%;
+}
+.link:hover:after{
+    width: 100%;
+}
+
+/* end nav */
+
+
+/* start hero */
+.hero{
+    background-image:  linear-gradient(rgb(0,0,0,0.5) ,rgb(0,0,0,0.5) ) , url(../img/hero-bg.jpg );
+    height: 100vh;
+    background-attachment:fixed ;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(rgb(0,0,0,0.8) ,) ;
+}
+
+.hero h1{
+    font-weight: 600;
+    font-size: 60px;
+}
+.hero h2{
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.hero h2::after{
+    content: " ";
+    animation: typed 4s infinite;
+}
+
+@keyframes typed{
+    0%{
+        content: 'd';
+    }
+    10%{
+        content: 'de';
+    }
+    20%{
+        content: 'dev';
+    }
+    30%{
+        content: 'deve';
+    }
+    40%{
+        content: 'devel';
+    }
+    50%{
+        content: 'develo';
+    }
+    60%{
+        content: 'develop';
+    }
+    70%{
+        content: 'develope';
+    }
+    80%{
+        content: 'developer';
+    }
+    90%{
+        content: 'develope';
+    }
+    100%{
+        content: 'develop';
+    }
+    0%{
+        content: 'develo';
+    }
+    10%{
+        content: 'devel';
+    }
+    20%{
+        content: 'deve';
+    }
+    30%{
+        content: 'dev';
+    }
+    40%{
+        content: 'de';
+    }
+    50%{
+        content: 'd';
+    }
+    60%{
+        content: '';
+    }
+    /* frelance */
+    0%{
+        content: 'f';
+    }
+    10%{
+        content: 'fr';
+    }
+    20%{
+        content: 'fre';
+    }
+    30%{
+        content: 'frel';
+    }
+    40%{
+        content: 'frela';
+    }
+    50%{
+        content: 'frelan';
+    }
+    60%{
+        content: 'frelanc';
+    }
+    70%{
+        content: 'frelance';
+    }
+    80%{
+        content: '';
+    }
+}
+/* end hero */
+
+
+/* start about section */
+.About::before{
+    content:"" ;
+    background-color: #0078FF;
+    width: 100px;
+    height: 4px;
+    position: absolute;
+    top: 50px;
+}
+/* end about section */
+
+/* start serves */
+.before{
+    width: 50px;
+    height: 5px;
+    background-color: #0078FF;
+    margin: 0 auto;
+}
+
+.icone i{
+    border: solid 9px #0078FF;
+    padding: 25px;
+    border-radius: 50%;
+    transition: all .5s;
+}
+
+.item:hover i{
+    background-color: #0078FF;
+    border: solid 9px #c0dbfb;
+}
+/* end serves */
+
+/* start sec fore */
+
+.fore-sec{
+    background-image:linear-gradient(rgba(14, 83, 163, 0.5) ,rgba(32, 100, 178, 0.6) ) , url(../img/counters-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+
+.icone-4 i{
+    border:  solid 9px #c0dbfb;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+/* end sec four */
+
+/* start sec portfolio */
+
+.img-port{
+    transition: all .5s;
+}
+
+.content-port:hover .img-port{
+    transform: scale(1.2);
+}
+
+/* start sec portfolio */
+
+/* start sec carousel */
+
+.carousel{
+    background-image:  linear-gradient(rgb(29,114,211,.8),rgb(29,114,211,.8)),url(../img/overlay-bg.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    padding: 5rem 0;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/*  end sec carousel  */
+
+/* start sec blog */
+
+.title a{
+    color: black;
+    transition: all .5s;
+}
+
+.title a:hover{
+    color: rgb(0, 89, 255);
+}
+
+.card-body .button{
+    transform: translateY(-20px);
+}
+
+/* end sec blog */
+
+
+/* start sec contact */
+
+.sec-contact{
+    background-image: 
+    linear-gradient(rgb(29, 114, 211,.8),rgb(29, 114, 211,.8))
+    ,url(../img/overlay-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 100px 0;
+    background-attachment: fixed;
+}
+
+.sec-contact .header::before{
+    content: "";
+    background-color: #0078FF;
+    height: 3px;
+    width: 110px;
+    position: absolute;
+    top: 90px;
+}
+
+
+
+.btn{
+    transition: all .5s;
+    padding: 10px 24px;
+}
+
+.btn:hover{
+    background-color: #3393FF;
+    border: 5px #CDE1F8 solid;
+}
+
+.sec-contact .icons li a span{
+    height: 40px;
+    width: 40px;
+    font-size: 1.2rem;
+    border: rgb(0, 120, 255) solid 4px;
+    border-radius: 50%;
+    margin: 0px 15px 0px 0px;
+    padding: 5px 10px 10px 10px ;
+    transition: all .5s ;
+}
+
+
+.sec-contact .icons li a span:hover{
+    background-color: #0078FF;
+    border: #c0dbfb 3px solid;
+}
+
+
+
+.sec-contact .icons a span:hover{
+    color: white;
+}
+
+/* end sec contact */
+
+
